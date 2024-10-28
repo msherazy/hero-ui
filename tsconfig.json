@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+    "baseUrl": ".", // Root directory for module resolution
+    "paths": {
+      "@/*": ["./src/*"] // General alias for the 'src' directory
+    },
+    "moduleResolution": "node", // Resolve modules using Node.js module resolution
+    "resolveJsonModule": true, // Allow importing JSON files
+    "esModuleInterop": true, // Enable interop between CommonJS and ES Modules
+    "skipLibCheck": true, // Skip type checking for library declaration files for better performance
+    "composite": true // Enable project references (necessary with "references" field)
+  }
+}
